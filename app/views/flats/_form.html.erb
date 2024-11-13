@@ -1,0 +1,9 @@
+<%= simple_form_for @flat do |f| %>
+  <%= f.input :name%>
+  <%= f.input :description%>
+  <%= f.input :address %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit(@flat.new_record? ? 'Create Flat' : 'Update Flat') %>
+<% end %>
+<%= link_to "Back to flats", flats_path %>
